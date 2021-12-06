@@ -1,14 +1,16 @@
-Создаем проект в папке stihi
+Для теста фронтента и разработки бекенда
+
+Создаем проект в папке museum
 
 Переходим в нее, если нахожимся не в ней.
-<pre><code>cd D:\Work\stihi</code></pre>
+<pre><code>cd D:\Work\museum</code></pre>
 Скачиваем Wordpress
 <pre><code>wp core download --locale=ru_RU</code></pre>
 
 Скачиваем репозиторий с gitHub (должен быть настроен ssh ключ)
 <pre><code>
 git init
-git remote add origin git@github.com:Your-Startup/stihi.git
+git remote add origin git@github.com:Your-Startup/museum.git
 git fetch --all
 git checkout main
 </code></pre>
@@ -26,6 +28,6 @@ wp db create
 
 Если имя папки проекта называется по другому, нужно заменить ссылки в базе данных
 Где project-new имя вашего проекта
-<pre><code>wp search-replace localhost/project-new localhost/stihi --all-tables --network --report-changed-only</code></pre>
+<pre><code>wp search-replace localhost/project-new localhost/museum --all-tables --network --report-changed-only</code></pre>
 
 ![image](https://user-images.githubusercontent.com/54105539/143086990-38db42d7-ca22-4700-86fe-2a4ce95d3561.png)
