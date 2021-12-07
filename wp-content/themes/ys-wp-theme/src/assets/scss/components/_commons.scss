@@ -276,6 +276,10 @@ select {
     &.jc-sa {
         justify-content: space-around;
     }
+
+    &.ai-fs {
+        align-items: flex-start;
+    }
 }
 
 .underline {

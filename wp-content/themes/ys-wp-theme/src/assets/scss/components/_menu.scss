@@ -96,3 +96,28 @@
     height: 100%;
 }
 
+
+/* Footer menu*/
+
+.footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.footer-menu-item {
+    flex-basis: 33%;
+    margin-bottom: 7px;
+}
+
+.footer-menu-item a {
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba($color: #fff, $alpha: 0.5);
+    text-decoration: none;
+}
