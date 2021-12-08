@@ -56,6 +56,11 @@ input.search-input {
     font-weight: normal;
     font-size: 16px;
     color: rgba(51, 51, 51, 0.5);
+    transition: 0.4s;
+
+    &:focus {
+        color: #333333;
+    }
 }
 
 .search-img {
@@ -64,4 +69,6 @@ input.search-input {
     cursor: pointer;
     height: 21px;
     width: 21px;
+    opacity: 0.5;
+    transition: 0.4s;
 }

@@ -14,5 +14,54 @@
         </div>
     </section>
 
+    <section id="main-silder">
+        <div class="main-silder-container">
+            <div class="main-silder-nav">
+                <div class="main-silder-nav_prev">
+                    <img src="<%= '/dist/images/prev.svg' %>" alt="prev">
+                </div>
+                <div class="main-silder-nav_next">
+                    <img src="<%= '/dist/images/next.svg' %>" alt="next">
+                </div>
+            </div>
+            <div class="main-silder-body owl-carousel">
+                <div class="slide">
+                    <img class="slide-bg" src="<%= '/dist/images/slide.png' %>" alt="slide">
+                    <div class="slide-content">
+                        <div class="slide-date">
+                            17 ноября 15:00
+                        </div>
+                        <div class="slide-title">
+                            <div class="slide-title-type">
+                                Выставка
+                            </div>
+                            <div class="slide-title-name">
+                                «Шухов. Формула архитектуры»
+                            </div>
+                        </div>
+                        <a href="#" class="btn white">Читать подробнее</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img class="slide-bg" src="<%= '/dist/images/slide.png' %>" alt="slide">
+                    <div class="slide-content">
+                        <div class="slide-date">
+                            18 ноября 11:00
+                        </div>
+                        <div class="slide-title">
+                            <div class="slide-title-type">
+                                Выставка
+                            </div>
+                            <div class="slide-title-name">
+                                «Шухов. Архитектура формулы»
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn white">Читать подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <% include ./_common/footer/footer.html %>
