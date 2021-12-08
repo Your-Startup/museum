@@ -47,20 +47,32 @@ a.btn {
     display: block;
     width: max-content;
     text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    padding: 15px 20px;
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    transition: 0.4s;
 
     &.white {
-        background-color: #fff;  
-        padding: 15px 20px;
-        font-family: Verdana;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
+        background-color: #FFFFFF;  
         color: #000000;
 
         &:hover {
             color: #333333;
             background-color: rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    &.grey {
+        background-color: #333333;
+        color: #FFFFFF;
+
+        &:hover {
+            background: #707070;
         }
     }
 }
