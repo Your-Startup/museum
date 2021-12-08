@@ -264,6 +264,28 @@ select {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
+    position: relative;
+
+    &.no-relative {
+        position: inherit;
+    }
+
+    & .framing {
+        &.start {
+            position: absolute;
+            z-index: 1;
+            top: -40px;
+            left: -60px;
+        }
+    
+        &.end {
+            transform: rotate(180deg);
+            position: absolute;
+            z-index: 1;
+            bottom: -40px;
+            right: -60px;
+        }
+    }
 }
 
 .row {

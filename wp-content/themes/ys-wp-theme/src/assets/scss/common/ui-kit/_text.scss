@@ -6,20 +6,9 @@ h2 {
     line-height: 34px;
     color: #000000;
     margin-bottom: 0;
-
-    &.betony {
-        position: relative;
-        z-index: 5;
-        margin-bottom: 16px;
-    }
-
-}
-
-h2 .betony-img {
-    position: absolute;
-    z-index: 1;
-    top: -40px;
-    left: -60px;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 5;
 }
 
 .section-title-block {
