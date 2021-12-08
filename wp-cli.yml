@@ -2,7 +2,7 @@ core download:
   locale: ru_RU
   skip-content:
 core config:
-  dbname: ys
+  dbname: museum
   dbuser: root
   dbpass:
   extra-php: |
@@ -10,7 +10,7 @@ core config:
     define('WP_DEBUG_LOG', true);
     define('WP_DEBUG_DISPLAY', false);
 core install:
-  url: http://localhost/ys/
+  url: http://localhost/museum/
   title: ys
   admin_user: ys
   admin_password: ysadmin
