@@ -1,31 +1,18 @@
 <% include ./_common/header/header.html %>
 
-    <div class="home_list">
-        <div class="details">
-            <div class="container">
-                <div class="details_content">
-                    <div class="details_text">
-                        <div class="details_title">
-                            Подробнее о проекте «Учим стихи просто!»
-                        </div>
-                        <div class="details_subtitle">
-                            Учим стихи просто!
-                        </div>
-
-                        <div class="details_problems">
-                            <img src="/dist/images/ava_1.jpg" class="details_img_mobail" alt="">
-                            <p>В школе многие дети сталкиваются с <span>проблемами заучивания стихов наизусть</span> и
-                                это превращается в настоящую пытку, как для них, так и для их родителей.</p>
-                            <p>Мы предлагаем вам решение, в виде отлично зарекомендовавший себя для заучивания текстовой
-                                информации – комбинированной мнемотехники.</p>
-                        </div>
-
-                    </div>
-                    <div class="details_img">IMG</div>
+    <section id="main-video">
+        <div class="main-video-container">
+            <div class="main-video-controls">
+                <div class="main-video-control main-video-control_pause active">
+                    <img src="<%= '/dist/images/pause.svg' %>" alt="pause">
+                </div>
+                <div class="main-video-control main-video-control_play">
+                    <img src="<%= '/dist/images/play.svg' %>" alt="play">
                 </div>
             </div>
+            <video id="video" src="<%= '/dist/video/your-startup.mp4' %>" autoplay muted loop></video>
         </div>
+    </section>
 
-    </div>
 
     <% include ./_common/footer/footer.html %>
