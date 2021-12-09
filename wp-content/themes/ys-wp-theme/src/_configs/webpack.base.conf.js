@@ -4,8 +4,8 @@ const path                 = require('path'),
       {CleanWebpackPlugin} = require('clean-webpack-plugin'),
       {PATHS, getEntries}  = require('./helper'),
       webpack              = require('webpack'),
-      glob                 = require("../../../../../wp-includes/js/backbone"),
       HtmlWebpackPlugin    = require("html-webpack-plugin");
+const glob = require("glob");
 
 let plugins = [
     new MiniCssExtractPlugin({
