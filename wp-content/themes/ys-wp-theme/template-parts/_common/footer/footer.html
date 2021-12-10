@@ -1,74 +1,104 @@
 <footer>
     <div class="container">
-        <div class="footer_content">
-            <div class="footer__hide">
-                <div class="footer__img"><img src="/dist/images/menu.svg" alt=""></div>
-                <div class="footer__btn">СВЯЗАТЬСЯ С НАМИ</div>
-            </div>
-            <div class="footer_block footer_menu">
-                <div>Подробнее о курсе</div>
-                <div>Каталог</div>
-                <div>Статьи</div>
-                <div>Вопросы и ответы</div>
-                <div>Благотворительность</div>
-            </div>
-            <div class="footer_block footer_contacts">
-                <img class="image" src="<%= '/dist/images/main_logo.png' %>" alt="">
-                <div class="hide">Attachments_nvstepan@mail.ru</div>
-                <div class="footer_social hide">
-                    <img src="<%= '/dist/images/telega.svg' %>" alt="">
-                    <img src="<%= '/dist/images/TikTok.svg' %>" alt="">
-                    <img src="<%= '/dist/images/VK.svg' %>" alt="">
-                    <img src="<%= '/dist/images/YT.svg' %>" alt="">
-                    <img src="<%= '/dist/images/FB.svg' %>" alt="">
-                    <img src="<%= '/dist/images/INST.svg' %>" alt="">
+        <div class="row jc-sb ai-fs">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <a href="#">
+                        <img src="<%= '/dist/images/logo-w.svg' %>" alt="logo">
+                    </a>
                 </div>
-                <div class="footer_contacts_btn">СВЯЗАТЬСЯ С НАМИ</div>
-                <div class="footer__developer">
-                    <div class="inherit">
-                        <div>Разработка</div>
-                        <div>сайта:</div>
-                    </div>
-                    <img class="dev_img" src="<%= '/dist/images/SU_logo.svg' %>" alt="">
+                <div class="copyright">
+                    © 2017 АО «Выксунский Металлургический завод»
                 </div>
             </div>
-            <div class="footer__special-line">
-                <div class="footer_social">
-                    <img src="<%= '/dist/images/telega.svg' %>" alt="">
-                    <img src="<%= '/dist/images/TikTok.svg' %>" alt="">
-                    <img src="<%= '/dist/images/VK.svg' %>" alt="">
-                    <img src="<%= '/dist/images/YT.svg' %>" alt="">
-                    <img src="<%= '/dist/images/FB.svg' %>" alt="">
-                    <img src="<%= '/dist/images/INST.svg' %>" alt="">
+            <div class="footer-center">
+                <div class="footer-title">
+                    Разделы сайта
                 </div>
-                <div class="attachments">Attachments_nvstepan@mail.ru</div>
+                <div class="footer-menu">
+                    <div class="footer-menu-item">
+                        <a href="#">Посетителям</a>
+                    </div>
+                    <div class="footer-menu-item">
+                        <a href="#">Выставки</a>
+                    </div>
+                    <div class="footer-menu-item">
+                        <a href="#">О музее</a>
+                    </div>
+                    <div class="footer-menu-item">
+                        <a href="#">События и программы</a>
+                    </div>
+                    <div class="footer-menu-item">
+                        <a href="#">Промышленный туризм</a>
+                    </div>
+                    <div class="footer-menu-item">
+                        <a href="#">Стать волонтером музея</a>
+                    </div>
+                    <div class="footer-menu-item">
+                        <a href="#">Музей—детям</a>
+                    </div>
+                    <div class="footer-menu-item">
+                        <a href="#">Доступный музей</a>
+                    </div>
+                    <div class="footer-menu-item">
+                        <a href="#">ExLibris</a>
+                    </div>
+                    <div class="footer-menu-item">
+                        <a href="#">Экскурсии</a>
+                    </div>
+                    <div class="footer-menu-item">
+                        <a href="#">ProГУЛ</a>
+                    </div>
+                    <div class="footer-menu-item">
+                        <a href="#">Арт-резиденция</a>
+                    </div>
+                    <div class="footer-menu-item">
+                        <a href="#">Как добраться</a>
+                    </div>
+                </div>
             </div>
-            <div class="footer_block footer_bureaucracy">
-                <div class="copyrights">
-                    <div>
-                        Копирование информации запрещено
-                    </div>
-                    <div>
-                        без письменного разрешения.
-                    </div>
+            <div class="footer-right">
+                <div class="footer-title">
+                    Подпишитесь на новости
                 </div>
-                <div class="footer_bureaucracy_confidentiality">Политика конфиденциальности</div>
-                <div>Публичная оферта</div>
-                <div class="footer_developer">
-                    <div>
-                        <div>Разработка</div>
-                        <div>сайта:</div>
-                    </div>
-                    <img src="<%= '/dist/images/SU_logo.svg' %>" alt="">
+                <form class="subscription">
+                    <input type="text" class="subscription-input" placeholder="Ваш Email">
+                    <img class="subscription-img" src="<%= '/dist/images/send.svg' %>" alt="send">
+                </form>
+                <div class="subscription-tip">
+                    Подписываясь на рассылку, вы соглашаетесь с <a href="#"> политикой конфиденциальности данных</a>
+                </div>
+                <div class="developed-by">
+                    Разработано в:
+                    <a href="https://your-startup.space/" target="_blank">
+                        <img class="developed-by-img" src="<%= '/dist/images/logo-ys.svg' %>" alt="Your Startup">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-contacts">
+        <div class="container">
+            <div class="row jc-sb">
+                <div class="social-network">
+                    <span>Социальные сети</span>
+                    <a href="#">
+                        <img src="<%= '/dist/images/vk-dark.svg' %>" alt="vk">
+                    </a>
+                    <a href="#">
+                        <img src="<%= '/dist/images/inst-dark.svg' %>" alt="inst">
+                    </a>
+                </div>
+                <div class="footer-contacts-item">
+                    <a href="tel:+78317790411">
+                        +7 (831) 779-04-11
+                    </a>
+                    <a href="mailto:info@vyksa.ru">
+                        info@vyksa.ru
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </footer>
-
-
-<div class="popup-wrapper d-flex is-hidden js-popup-wrapper">
-    <% include ./../popups/menu.html %>
-    <% include ./../popups/login.html %>
-    <% include ./../popups/reset-password.html %>
-</div>
