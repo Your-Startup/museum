@@ -39,7 +39,7 @@ button {
             color: #333333;
             background-color: rgba(255, 255, 255, 0.7);
         }
-      }
+    }
 }
 
 a.btn {
@@ -66,6 +66,17 @@ a.btn {
             background-color: rgba(255, 255, 255, 0.7);
         }
     }
+
+    &.t-white {
+        font-family: 'PT Sans';
+        line-height: 21px;
+        background-color: transparent;  
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 3px;
+        padding: 5px 10px;
+    }
+
 
     &.grey {
         background-color: #333333;

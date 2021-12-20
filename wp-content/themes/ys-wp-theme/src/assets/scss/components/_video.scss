@@ -15,6 +15,12 @@
     pointer-events: none;
 }
 
+.main-video-title {
+    position: absolute;
+    pointer-events: all;
+    left: 80px;
+}
+
 .main-video-controls {
     position: absolute;
     height: 100%;

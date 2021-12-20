@@ -51,6 +51,9 @@ footer {
 }
 
 .subscription-input {
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 0 18px;
     background: #434343;
     font-family: 'PT Sans';
     font-style: normal;
@@ -59,8 +62,9 @@ footer {
     line-height: 21px;
     color: rgba(255, 255, 255, 0.7);
     width: 100%;
-    border-color: #434343;
+    border: 1px solid #434343;
     padding-right: 41px;
+    height: 40px;
 }
 
 .subscription-img {

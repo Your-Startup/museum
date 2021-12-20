@@ -1,0 +1,31 @@
+.title-block {
+    padding: 20px;
+    background: rgba(43, 36, 19, 0.6);
+    backdrop-filter: blur(7px);
+    border-radius: 8px;
+    width: min-content;
+    position: relative;
+}
+
+.title-block__title {
+    font-family: 'CoFo Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 50px;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: max-content;
+}
+
+.title-block__sections {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    & .btn {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+}

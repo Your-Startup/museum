@@ -3,13 +3,12 @@
 @import
 "../all/normalize.scss", // Разобрать на модули
 
-"../common/ui-kit/buttons",
-"../common/ui-kit/text",
-"../common/ui-kit/grid",
-
     // Компонента
 "../components/menu",
 "../components/commons",
 "../components/header",
-"../components/footer"
+"../components/footer",
+"../common/ui-kit/buttons",
+"../common/ui-kit/text",
+"../common/ui-kit/grid"
 

@@ -1,0 +1,15 @@
+.info-block-text {
+   max-width: 640px;
+   width: 50%;
+   margin-right: 40px;
+}
+
+.info-block-img {
+    width: 50%;
+    
+    & img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+}

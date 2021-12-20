@@ -1,0 +1,16 @@
+<section id="main-video">
+    <div class="main-video-container">
+        <div class="main-video-title">
+            <% include ../title-block/title-block.html %>
+        </div>
+        <div class="main-video-controls">
+            <div class="main-video-control main-video-control_pause active">
+                <img src="<%= 'images/pause.svg' %>" alt="pause">
+            </div>
+            <div class="main-video-control main-video-control_play">
+                <img src="<%= 'images/play.svg' %>" alt="play">
+            </div>
+        </div>
+        <video id="video" src="<%= 'video/your-startup.mp4' %>" autoplay muted loop></video>
+    </div>
+</section>

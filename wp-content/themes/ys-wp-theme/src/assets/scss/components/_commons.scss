@@ -172,11 +172,9 @@ ol {
 /* Убираем внешние отступы */
 
 body,
-h1,
 h2,
 h3,
 h4,
-p,
 ul[class],
 ol[class],
 li,
@@ -398,6 +396,15 @@ progress {
 
 section {
     padding: 70px 0;
+
+    &.grey {
+        background-color: #F9F9F9;
+
+        &.border {
+            border-top: 1px solid rgba(51, 51, 51, 0.1);
+            border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+        }
+    }
 }
 
 /*My style*/
