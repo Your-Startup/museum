@@ -1,5 +1,3 @@
-@import url($url + '/link.svg');
-
 /* FONTS */
 
 /*CoFo*/
@@ -391,19 +389,6 @@ progress {
 
     &::-webkit-progress-value {
         background: #7ec3e9;
-    }
-}
-
-.link {
-    position: relative;
-    margin-bottom: 40px;
-
-    &::after {
-        position: absolute;
-        content: url($url + '/link.svg');
-        display: block;
-        top: 16px;
-        right: 16px;
     }
 }
 
