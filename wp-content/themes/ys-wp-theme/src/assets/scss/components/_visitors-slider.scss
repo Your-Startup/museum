@@ -1,0 +1,123 @@
+
+@import
+'~swiper/swiper.scss';
+
+.visitors {
+    padding-top: 70px;
+}
+
+.visitors__heading {
+    max-width: 716px;
+    font-family: 'CoFo Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 50px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.visitors__text {
+    max-width: 600px;
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(51, 51, 51, 0.7);
+    margin-bottom: 20px;
+}
+
+.visitors__content {
+    max-width: 625px;
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(51, 51, 51, 0.7);
+    margin-bottom: 40px;
+}
+
+.visitors__flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.visitors__heading-low {
+    font-family: 'CoFo Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 34px;
+    color: #333333;
+}
+
+.visitors__nav {
+    display: flex;
+    align-items: center;
+}
+
+.visitors__nav-block {
+    display: flex;
+    align-items: center;
+}
+
+.visitors__img {
+    cursor: pointer;
+}
+
+.visitors__nav-btn,
+.visitors__nav-slash {
+    font-family: 'CoFo Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.visitors__nav-block {
+    margin: 0 18px;
+}
+
+.visitors__slider {
+    width: 100%;
+    height: 502px;
+    margin-bottom: 40px;
+}
+
+.visitors__slides {
+    display: flex;
+    width: 1280px;
+    justify-content: center;
+    border: 1px solid #EBEBEB;
+    align-items: center;
+    border-radius: 8px;
+    transition: transform .5s ease-in-out;
+}
+
+.visitors__slides img {
+    pointer-events: none;
+    max-width: 1030px;
+    height: 500px;
+}
+
+.visitors__slider .swiper-slide-next,
+.visitors__slider .swiper-slide-prev {
+    transform: scaleY(0.9);
+    opacity: .7;
+}
+
+.swiper-slide-next img,
+.swiper-slide-prev img {
+    transition: transform .5s ease-in-out;
+    transform: scaleY(0.9);
+}
+
+.visitors__wrapper {
+    align-items: center;
+}

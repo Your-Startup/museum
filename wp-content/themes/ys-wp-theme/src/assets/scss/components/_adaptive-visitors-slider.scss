@@ -1,0 +1,101 @@
+.adaptive-visitors__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adaptive-visitors__img {
+    cursor: pointer;
+}
+
+.adaptve-visitors__nav {
+    display: flex;
+    align-items: center;
+    margin: 0 25px;
+}
+
+.adaptive-visitors__btn {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.adaptive-visitors__slider {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.adaptive-visitors__slide {
+    max-width: 1280px;
+    height: 500px;
+    background-color: #333;
+    transition: transform .5s ease-in-out;
+    position: relative;
+
+    & img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        object-fit: cover;
+        transform: none !important;
+    }
+}
+
+.adaptive-visitors__slide-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 80px;
+    position: relative;
+    z-index: 5;
+}
+
+.adaptive-visitors__wrapper {
+    align-items: center;
+}
+
+.adaptive-visitors__slider .swiper-slide-next,
+.adaptive-visitors__slider .swiper-slide-prev {
+    transform: scaleY(0.9);
+    opacity: .7;
+}
+
+.adaptive-visitors__time {
+    margin-bottom: 10px;
+    font-family: Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.adaptive-visitors__heading {
+    max-width: 466px;
+    font-family: 'CoFo Sans', sans-serif;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+.adaptive__visitors__button {
+    padding: 10px 20px;
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #fff;
+}

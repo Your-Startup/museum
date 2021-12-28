@@ -2,716 +2,686 @@
 
     <% include ./_common/video/video-title.html %>
 
-        <section id="info-block">
-            <div class="container">
-                <h1>События и программы</h1>
-                <div class="flex">
-                    <div class="info-block-text">
-                        <p>
-                            Уважаемые посетители!<br>
-                            В связи с Указом Губернатора Нижегородской области от 13 марта 2020 г. № 27 «О введении
-                            режима повышенной готовности» (с изменениями на 29 октября 2021 г.) вход в музей выксунского
-                            завода ОМК для лиц старше 18 лет возможен только при наличии одного из документов:<br>
-                            • сертификата профилактической прививки от COVID-19;<br>
-                            • сертификата об иммунизации<br>
-                            • универсального документа посетителя мероприятий<br>
-                        </p>
-                        <p>
-                            Также необходимо наличие документа, удостоверяющего личность (паспорт
-                            гражданина РФ, удостоверение личности военнослужащего РФ). Для лиц до 18 лет предъявление QR
-                            кода не является обязательным. Для иностранных граждан основанием для входа в музей истории
-                            Выксунского
-                            металлургического завода является наличие ПЦР-теста (действует 72 часа) и документа,
-                            удостоверяющего личность (паспорт иностранного гражданина).
-                        </p>
-                        <p>
-                            Мы просим планировать посещение экскурсий заранее и предварительно записываться по телефону:
-                            8 (83177) 9-04-11. Количество мест в группах ограничено.
-                        </p>
-                    </div>
-                    <div class="info-block-img">
-                        <img src="<%= 'images/no_img.jpg' %>" alt="img" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
+        <% include ./_common/info-block/info-block.html %>
 
-        <section id="concerts" class="grey border">
-            <div class="container">
-                <div class="events-grid">
-                    <div class="event-title-block yellow">
-                        <div class="event-block-tag">
-                            От 12 лет
-                        </div>
-                        <div class="event-title-block-content">
-                            <h2>
-                                Концерты и спектакли
-                            </h2>
-                            <p>
-                                Камерные концерты и театральные представления в Господском доме - это одна из традиций
-                                музея
-                            </p>
-                            <a href="#" class="arrow">
-                                Смотреть всё
-                                <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
-                                        fill="#333333" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="event-title-block-bg">
-                            <div class="event-title-block-bg__top">
-                                <svg width="276" height="32" viewBox="0 0 276 32" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g opacity="0.1">
-                                        <path d="M276 16H16" stroke="#333333" stroke-width="5" />
-                                        <rect x="2.98023e-07" y="3.53835" width="17.1327" height="17.1327"
-                                            transform="matrix(0.706543 0.70767 -0.706543 0.70767 18.1387 1.03449)"
-                                            fill="white" stroke="#333333" stroke-width="5" />
-                                    </g>
-                                </svg>
+            <section id="concerts" class="grey border">
+                <div class="container">
+                    <div class="events-grid">
+                        <div class="event-title-block yellow">
+                            <div class="event-block-tag">
+                                От 12 лет
                             </div>
-                            <div class="event-title-block-bg__bottom">
-                                <svg width="353" height="112" viewBox="0 0 353 112" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g opacity="0.1">
-                                        <path d="M0.000366211 109L337.055 109L337.055 7.62939e-06" stroke="#333333"
-                                            stroke-width="5" />
-                                        <rect x="-3.53835" width="17.1327" height="17.1327"
-                                            transform="matrix(-0.70767 0.706543 -0.70767 -0.706543 346.958 44.652)"
-                                            fill="white" stroke="#333333" stroke-width="5" />
-                                    </g>
-                                </svg>
+                            <div class="event-title-block-content">
+                                <h2>
+                                    Концерты и спектакли
+                                </h2>
+                                <p>
+                                    Камерные концерты и театральные представления в Господском доме - это одна из
+                                    традиций
+                                    музея
+                                </p>
+                                <a href="#" class="arrow">
+                                    Смотреть всё
+                                    <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
+                                            fill="#333333" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="event-title-block-bg">
+                                <div class="event-title-block-bg__top">
+                                    <svg width="276" height="32" viewBox="0 0 276 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.1">
+                                            <path d="M276 16H16" stroke="#333333" stroke-width="5" />
+                                            <rect x="2.98023e-07" y="3.53835" width="17.1327" height="17.1327"
+                                                transform="matrix(0.706543 0.70767 -0.706543 0.70767 18.1387 1.03449)"
+                                                fill="white" stroke="#333333" stroke-width="5" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="event-title-block-bg__bottom">
+                                    <svg width="353" height="112" viewBox="0 0 353 112" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.1">
+                                            <path d="M0.000366211 109L337.055 109L337.055 7.62939e-06" stroke="#333333"
+                                                stroke-width="5" />
+                                            <rect x="-3.53835" width="17.1327" height="17.1327"
+                                                transform="matrix(-0.70767 0.706543 -0.70767 -0.706543 346.958 44.652)"
+                                                fill="white" stroke="#333333" stroke-width="5" />
+                                        </g>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="event-block">
-                        <div class="event-block-tag">
-                            От 12 лет
-                        </div>
-                        <div class="event-block-status">
-                            Скоро будет
-                        </div>
-                        <div class="event-block-title">
-                            <div class="event-block-title-date">
-                                21 ноября, 14:00
+                        <div class="event-block">
+                            <div class="event-block-tag">
+                                От 12 лет
                             </div>
-                            <h3>
-                                Название программы
-                            </h3>
-                        </div>
-                        <div class="event-block-content">
-                            <div class="event-block-content-date">
-                                20 ноября, 14:00 60-90 минут
+                            <div class="event-block-status">
+                                Скоро будет
                             </div>
-                            <h2>
-                                Название события в несколько строк
-                            </h2>
-                            <p>
-                                Описание события в несколько строк, в котором раскрываются осовные её преимущества,
-                                особенности.
-                            </p>
-                            <a href="#" class="arrow">
-                                Купить билеты
-                                <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="event-block-bg">
-                            <img src="<%= 'images/no_img.jpg' %>" alt="event">
-                        </div>
-                    </div>
-                    <div class="event-block">
-                        <div class="event-block-tag">
-                            От 12 лет
-                        </div>
-                        <div class="event-block-status">
-                            Скоро будет
-                        </div>
-                        <div class="event-block-title">
-                            <div class="event-block-title-date">
-                                21 ноября, 14:00
+                            <div class="event-block-title">
+                                <div class="event-block-title-date">
+                                    21 ноября, 14:00
+                                </div>
+                                <h3>
+                                    Название программы
+                                </h3>
                             </div>
-                            <h3>
-                                Название программы
-                            </h3>
-                        </div>
-                        <div class="event-block-content">
-                            <div class="event-block-content-date">
-                                20 ноября, 14:00 60-90 минут
+                            <div class="event-block-content">
+                                <div class="event-block-content-date">
+                                    20 ноября, 14:00 60-90 минут
+                                </div>
+                                <h2>
+                                    Название события в несколько строк
+                                </h2>
+                                <p>
+                                    Описание события в несколько строк, в котором раскрываются осовные её преимущества,
+                                    особенности.
+                                </p>
+                                <a href="#" class="arrow">
+                                    Купить билеты
+                                    <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
                             </div>
-                            <h2>
-                                Название события в несколько строк
-                            </h2>
-                            <p>
-                                Описание события в несколько строк, в котором раскрываются осовные её преимущества,
-                                особенности.
-                            </p>
-                            <a href="#" class="arrow">
-                                Купить билеты
-                                <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
+                            <div class="event-block-bg">
+                                <img src="<%= 'images/no_img.jpg' %>" alt="event">
+                            </div>
                         </div>
-                        <div class="event-block-bg">
-                            <img src="<%= 'images/no_img.jpg' %>" alt="event">
+                        <div class="event-block">
+                            <div class="event-block-tag">
+                                От 12 лет
+                            </div>
+                            <div class="event-block-status">
+                                Скоро будет
+                            </div>
+                            <div class="event-block-title">
+                                <div class="event-block-title-date">
+                                    21 ноября, 14:00
+                                </div>
+                                <h3>
+                                    Название программы
+                                </h3>
+                            </div>
+                            <div class="event-block-content">
+                                <div class="event-block-content-date">
+                                    20 ноября, 14:00 60-90 минут
+                                </div>
+                                <h2>
+                                    Название события в несколько строк
+                                </h2>
+                                <p>
+                                    Описание события в несколько строк, в котором раскрываются осовные её преимущества,
+                                    особенности.
+                                </p>
+                                <a href="#" class="arrow">
+                                    Купить билеты
+                                    <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="event-block-bg">
+                                <img src="<%= 'images/no_img.jpg' %>" alt="event">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="evenings">
-            <div class="container">
-                <div class="events-grid">
-                    <div class="event-title-block blue">
-                        <div class="event-block-tag">
-                            От 14 лет
-                        </div>
-                        <div class="event-title-block-content">
-                            <h2>
-                                Творческие вечера
-                            </h2>
-                            <p>
-                                Состоят из двух частей – экскурсии по экспозиции музея и встречи с интересными людьми,
-                                творческими коллективами, наполненные музыкальным, литературным, поэтическим
-                                содержанием.
-                            </p>
-                            <a href="#" class="arrow">
-                                Смотреть всё
-                                <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
-                                        fill="#333333" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="event-title-block-bg">
-                            <div class="event-title-block-bg__top">
-                                <svg width="276" height="32" viewBox="0 0 276 32" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g opacity="0.1">
-                                        <path d="M276 16H16" stroke="white" stroke-width="5" />
-                                        <rect x="2.98023e-07" y="3.53835" width="17.1327" height="17.1327"
-                                            transform="matrix(0.706543 0.70767 -0.706543 0.70767 18.1387 1.03449)"
-                                            fill="white" stroke="white" stroke-width="5" />
-                                    </g>
-                                </svg>
+            <section id="evenings">
+                <div class="container">
+                    <div class="events-grid">
+                        <div class="event-title-block blue">
+                            <div class="event-block-tag">
+                                От 14 лет
                             </div>
-                            <div class="event-title-block-bg__bottom">
-                                <svg width="353" height="112" viewBox="0 0 353 112" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g opacity="0.1">
-                                        <path d="M0.000366211 109L337.055 109L337.055 7.62939e-06" stroke="white"
-                                            stroke-width="5" />
-                                        <rect x="-3.53835" width="17.1327" height="17.1327"
-                                            transform="matrix(-0.70767 0.706543 -0.70767 -0.706543 346.958 44.6521)"
-                                            fill="white" stroke="white" stroke-width="5" />
-                                    </g>
-                                </svg>
+                            <div class="event-title-block-content">
+                                <h2>
+                                    Творческие вечера
+                                </h2>
+                                <p>
+                                    Состоят из двух частей – экскурсии по экспозиции музея и встречи с интересными
+                                    людьми,
+                                    творческими коллективами, наполненные музыкальным, литературным, поэтическим
+                                    содержанием.
+                                </p>
+                                <a href="#" class="arrow">
+                                    Смотреть всё
+                                    <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
+                                            fill="#333333" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="event-title-block-bg">
+                                <div class="event-title-block-bg__top">
+                                    <svg width="276" height="32" viewBox="0 0 276 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.1">
+                                            <path d="M276 16H16" stroke="white" stroke-width="5" />
+                                            <rect x="2.98023e-07" y="3.53835" width="17.1327" height="17.1327"
+                                                transform="matrix(0.706543 0.70767 -0.706543 0.70767 18.1387 1.03449)"
+                                                fill="white" stroke="white" stroke-width="5" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="event-title-block-bg__bottom">
+                                    <svg width="353" height="112" viewBox="0 0 353 112" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.1">
+                                            <path d="M0.000366211 109L337.055 109L337.055 7.62939e-06" stroke="white"
+                                                stroke-width="5" />
+                                            <rect x="-3.53835" width="17.1327" height="17.1327"
+                                                transform="matrix(-0.70767 0.706543 -0.70767 -0.706543 346.958 44.6521)"
+                                                fill="white" stroke="white" stroke-width="5" />
+                                        </g>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="event-block">
-                        <div class="event-block-tag">
-                            От 12 лет
-                        </div>
-                        <div class="event-block-status">
-                            Скоро будет
-                        </div>
-                        <div class="event-block-title">
-                            <div class="event-block-title-date">
-                                21 ноября, 14:00
+                        <div class="event-block">
+                            <div class="event-block-tag">
+                                От 12 лет
                             </div>
-                            <h3>
-                                Название программы
-                            </h3>
-                        </div>
-                        <div class="event-block-content">
-                            <div class="event-block-content-date">
-                                20 ноября, 14:00 60-90 минут
+                            <div class="event-block-status">
+                                Скоро будет
                             </div>
-                            <h2>
-                                Название события в несколько строк
-                            </h2>
-                            <p>
-                                Описание события в несколько строк, в котором раскрываются осовные её преимущества,
-                                особенности.
-                            </p>
-                            <a href="#" class="arrow">
-                                Купить билеты
-                                <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="event-block-bg">
-                            <img src="<%= 'images/no_img.jpg' %>" alt="event">
-                        </div>
-                    </div>
-                    <div class="event-block">
-                        <div class="event-block-tag">
-                            От 12 лет
-                        </div>
-                        <div class="event-block-status">
-                            Скоро будет
-                        </div>
-                        <div class="event-block-title">
-                            <div class="event-block-title-date">
-                                21 ноября, 14:00
+                            <div class="event-block-title">
+                                <div class="event-block-title-date">
+                                    21 ноября, 14:00
+                                </div>
+                                <h3>
+                                    Название программы
+                                </h3>
                             </div>
-                            <h3>
-                                Название программы
-                            </h3>
-                        </div>
-                        <div class="event-block-content">
-                            <div class="event-block-content-date">
-                                20 ноября, 14:00 60-90 минут
+                            <div class="event-block-content">
+                                <div class="event-block-content-date">
+                                    20 ноября, 14:00 60-90 минут
+                                </div>
+                                <h2>
+                                    Название события в несколько строк
+                                </h2>
+                                <p>
+                                    Описание события в несколько строк, в котором раскрываются осовные её преимущества,
+                                    особенности.
+                                </p>
+                                <a href="#" class="arrow">
+                                    Купить билеты
+                                    <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
                             </div>
-                            <h2>
-                                Название события в несколько строк
-                            </h2>
-                            <p>
-                                Описание события в несколько строк, в котором раскрываются осовные её преимущества,
-                                особенности.
-                            </p>
-                            <a href="#" class="arrow">
-                                Купить билеты
-                                <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
+                            <div class="event-block-bg">
+                                <img src="<%= 'images/no_img.jpg' %>" alt="event">
+                            </div>
                         </div>
-                        <div class="event-block-bg">
-                            <img src="<%= 'images/no_img.jpg' %>" alt="event">
+                        <div class="event-block">
+                            <div class="event-block-tag">
+                                От 12 лет
+                            </div>
+                            <div class="event-block-status">
+                                Скоро будет
+                            </div>
+                            <div class="event-block-title">
+                                <div class="event-block-title-date">
+                                    21 ноября, 14:00
+                                </div>
+                                <h3>
+                                    Название программы
+                                </h3>
+                            </div>
+                            <div class="event-block-content">
+                                <div class="event-block-content-date">
+                                    20 ноября, 14:00 60-90 минут
+                                </div>
+                                <h2>
+                                    Название события в несколько строк
+                                </h2>
+                                <p>
+                                    Описание события в несколько строк, в котором раскрываются осовные её преимущества,
+                                    особенности.
+                                </p>
+                                <a href="#" class="arrow">
+                                    Купить билеты
+                                    <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="event-block-bg">
+                                <img src="<%= 'images/no_img.jpg' %>" alt="event">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="lessons" class="grey border">
-            <div class="container">
-                <div class="events-grid">
-                    <div class="event-title-block yellow">
-                        <div class="event-block-tag">
-                            От 16 лет
-                        </div>
-                        <div class="event-title-block-content">
-                            <h2>
-                                Творческие занятия
-                            </h2>
-                            <p>
-                                Опытные педагоги помогут научиться рисовать с натуры, освоить разнообразные техники
-                                декоративно-прикладного творчества. Создаем возможность для самореализации и для
-                                опытных, и для начинающих.
-                            </p>
-                            <a href="#" class="arrow">
-                                Смотреть всё
-                                <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
-                                        fill="#333333" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="event-title-block-bg">
-                            <div class="event-title-block-bg__top">
-                                <svg width="276" height="32" viewBox="0 0 276 32" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g opacity="0.1">
-                                        <path d="M276 16H16" stroke="#333333" stroke-width="5" />
-                                        <rect x="2.98023e-07" y="3.53835" width="17.1327" height="17.1327"
-                                            transform="matrix(0.706543 0.70767 -0.706543 0.70767 18.1387 1.03449)"
-                                            fill="white" stroke="#333333" stroke-width="5" />
-                                    </g>
-                                </svg>
+            <section id="lessons" class="grey border">
+                <div class="container">
+                    <div class="events-grid">
+                        <div class="event-title-block yellow">
+                            <div class="event-block-tag">
+                                От 16 лет
                             </div>
-                            <div class="event-title-block-bg__bottom">
-                                <svg width="353" height="112" viewBox="0 0 353 112" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g opacity="0.1">
-                                        <path d="M0.000366211 109L337.055 109L337.055 7.62939e-06" stroke="#333333"
-                                            stroke-width="5" />
-                                        <rect x="-3.53835" width="17.1327" height="17.1327"
-                                            transform="matrix(-0.70767 0.706543 -0.70767 -0.706543 346.958 44.652)"
-                                            fill="white" stroke="#333333" stroke-width="5" />
-                                    </g>
-                                </svg>
+                            <div class="event-title-block-content">
+                                <h2>
+                                    Творческие занятия
+                                </h2>
+                                <p>
+                                    Опытные педагоги помогут научиться рисовать с натуры, освоить разнообразные техники
+                                    декоративно-прикладного творчества. Создаем возможность для самореализации и для
+                                    опытных, и для начинающих.
+                                </p>
+                                <a href="#" class="arrow">
+                                    Смотреть всё
+                                    <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
+                                            fill="#333333" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="event-title-block-bg">
+                                <div class="event-title-block-bg__top">
+                                    <svg width="276" height="32" viewBox="0 0 276 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.1">
+                                            <path d="M276 16H16" stroke="#333333" stroke-width="5" />
+                                            <rect x="2.98023e-07" y="3.53835" width="17.1327" height="17.1327"
+                                                transform="matrix(0.706543 0.70767 -0.706543 0.70767 18.1387 1.03449)"
+                                                fill="white" stroke="#333333" stroke-width="5" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="event-title-block-bg__bottom">
+                                    <svg width="353" height="112" viewBox="0 0 353 112" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.1">
+                                            <path d="M0.000366211 109L337.055 109L337.055 7.62939e-06" stroke="#333333"
+                                                stroke-width="5" />
+                                            <rect x="-3.53835" width="17.1327" height="17.1327"
+                                                transform="matrix(-0.70767 0.706543 -0.70767 -0.706543 346.958 44.652)"
+                                                fill="white" stroke="#333333" stroke-width="5" />
+                                        </g>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="event-block">
-                        <div class="event-block-tag">
-                            От 12 лет
-                        </div>
-                        <div class="event-block-status">
-                            Скоро будет
-                        </div>
-                        <div class="event-block-title">
-                            <div class="event-block-title-date">
-                                21 ноября, 14:00
+                        <div class="event-block">
+                            <div class="event-block-tag">
+                                От 12 лет
                             </div>
-                            <h3>
-                                Название программы
-                            </h3>
-                        </div>
-                        <div class="event-block-content">
-                            <div class="event-block-content-date">
-                                20 ноября, 14:00 60-90 минут
+                            <div class="event-block-status">
+                                Скоро будет
                             </div>
-                            <h2>
-                                Название события в несколько строк
-                            </h2>
-                            <p>
-                                Описание события в несколько строк, в котором раскрываются осовные её преимущества,
-                                особенности.
-                            </p>
-                            <a href="#" class="arrow">
-                                Купить билеты
-                                <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="event-block-bg">
-                            <img src="<%= 'images/no_img.jpg' %>" alt="event">
-                        </div>
-                    </div>
-                    <div class="event-block">
-                        <div class="event-block-tag">
-                            От 12 лет
-                        </div>
-                        <div class="event-block-status">
-                            Скоро будет
-                        </div>
-                        <div class="event-block-title">
-                            <div class="event-block-title-date">
-                                21 ноября, 14:00
+                            <div class="event-block-title">
+                                <div class="event-block-title-date">
+                                    21 ноября, 14:00
+                                </div>
+                                <h3>
+                                    Название программы
+                                </h3>
                             </div>
-                            <h3>
-                                Название программы
-                            </h3>
-                        </div>
-                        <div class="event-block-content">
-                            <div class="event-block-content-date">
-                                20 ноября, 14:00 60-90 минут
+                            <div class="event-block-content">
+                                <div class="event-block-content-date">
+                                    20 ноября, 14:00 60-90 минут
+                                </div>
+                                <h2>
+                                    Название события в несколько строк
+                                </h2>
+                                <p>
+                                    Описание события в несколько строк, в котором раскрываются осовные её преимущества,
+                                    особенности.
+                                </p>
+                                <a href="#" class="arrow">
+                                    Купить билеты
+                                    <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
                             </div>
-                            <h2>
-                                Название события в несколько строк
-                            </h2>
-                            <p>
-                                Описание события в несколько строк, в котором раскрываются осовные её преимущества,
-                                особенности.
-                            </p>
-                            <a href="#" class="arrow">
-                                Купить билеты
-                                <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
+                            <div class="event-block-bg">
+                                <img src="<%= 'images/no_img.jpg' %>" alt="event">
+                            </div>
                         </div>
-                        <div class="event-block-bg">
-                            <img src="<%= 'images/no_img.jpg' %>" alt="event">
+                        <div class="event-block">
+                            <div class="event-block-tag">
+                                От 12 лет
+                            </div>
+                            <div class="event-block-status">
+                                Скоро будет
+                            </div>
+                            <div class="event-block-title">
+                                <div class="event-block-title-date">
+                                    21 ноября, 14:00
+                                </div>
+                                <h3>
+                                    Название программы
+                                </h3>
+                            </div>
+                            <div class="event-block-content">
+                                <div class="event-block-content-date">
+                                    20 ноября, 14:00 60-90 минут
+                                </div>
+                                <h2>
+                                    Название события в несколько строк
+                                </h2>
+                                <p>
+                                    Описание события в несколько строк, в котором раскрываются осовные её преимущества,
+                                    особенности.
+                                </p>
+                                <a href="#" class="arrow">
+                                    Купить билеты
+                                    <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="event-block-bg">
+                                <img src="<%= 'images/no_img.jpg' %>" alt="event">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="film-club">
-            <div class="container">
-                <div class="events-grid">
-                    <div class="event-title-block dark-blue">
-                        <div class="event-block-tag">
-                            От 12 лет
-                        </div>
-                        <div class="event-title-block-content">
-                            <h2>
-                                Киноклуб
-                            </h2>
-                            <p>
-                                Регулярные встречи с целью знакомства с шедеврами отечественного и мирового кино,
-                                обсуждения эстетических, нравственных и общественных проблем в кругу близких по
-                                интересам людей.
-                            </p>
-                            <a href="#" class="arrow">
-                                Смотреть всё
-                                <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
-                                        fill="#333333" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="event-title-block-bg">
-                            <div class="event-title-block-bg__top">
-                                <svg width="276" height="32" viewBox="0 0 276 32" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g opacity="0.1">
-                                        <path d="M276 16H16" stroke="white" stroke-width="5" />
-                                        <rect x="2.98023e-07" y="3.53835" width="17.1327" height="17.1327"
-                                            transform="matrix(0.706543 0.70767 -0.706543 0.70767 18.1387 1.03449)"
-                                            fill="white" stroke="white" stroke-width="5" />
-                                    </g>
-                                </svg>
+            <section id="film-club">
+                <div class="container">
+                    <div class="events-grid">
+                        <div class="event-title-block dark-blue">
+                            <div class="event-block-tag">
+                                От 12 лет
                             </div>
-                            <div class="event-title-block-bg__bottom">
-                                <svg width="353" height="112" viewBox="0 0 353 112" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g opacity="0.1">
-                                        <path d="M0.000366211 109L337.055 109L337.055 7.62939e-06" stroke="white"
-                                            stroke-width="5" />
-                                        <rect x="-3.53835" width="17.1327" height="17.1327"
-                                            transform="matrix(-0.70767 0.706543 -0.70767 -0.706543 346.958 44.6521)"
-                                            fill="white" stroke="white" stroke-width="5" />
-                                    </g>
-                                </svg>
+                            <div class="event-title-block-content">
+                                <h2>
+                                    Киноклуб
+                                </h2>
+                                <p>
+                                    Регулярные встречи с целью знакомства с шедеврами отечественного и мирового кино,
+                                    обсуждения эстетических, нравственных и общественных проблем в кругу близких по
+                                    интересам людей.
+                                </p>
+                                <a href="#" class="arrow">
+                                    Смотреть всё
+                                    <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
+                                            fill="#333333" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="event-title-block-bg">
+                                <div class="event-title-block-bg__top">
+                                    <svg width="276" height="32" viewBox="0 0 276 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.1">
+                                            <path d="M276 16H16" stroke="white" stroke-width="5" />
+                                            <rect x="2.98023e-07" y="3.53835" width="17.1327" height="17.1327"
+                                                transform="matrix(0.706543 0.70767 -0.706543 0.70767 18.1387 1.03449)"
+                                                fill="white" stroke="white" stroke-width="5" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="event-title-block-bg__bottom">
+                                    <svg width="353" height="112" viewBox="0 0 353 112" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.1">
+                                            <path d="M0.000366211 109L337.055 109L337.055 7.62939e-06" stroke="white"
+                                                stroke-width="5" />
+                                            <rect x="-3.53835" width="17.1327" height="17.1327"
+                                                transform="matrix(-0.70767 0.706543 -0.70767 -0.706543 346.958 44.6521)"
+                                                fill="white" stroke="white" stroke-width="5" />
+                                        </g>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="event-block">
-                        <div class="event-block-tag">
-                            От 12 лет
-                        </div>
-                        <div class="event-block-status">
-                            Скоро будет
-                        </div>
-                        <div class="event-block-title">
-                            <div class="event-block-title-date">
-                                21 ноября, 14:00
+                        <div class="event-block">
+                            <div class="event-block-tag">
+                                От 12 лет
                             </div>
-                            <h3>
-                                Название программы
-                            </h3>
-                        </div>
-                        <div class="event-block-content">
-                            <div class="event-block-content-date">
-                                20 ноября, 14:00 60-90 минут
+                            <div class="event-block-status">
+                                Скоро будет
                             </div>
-                            <h2>
-                                Название события в несколько строк
-                            </h2>
-                            <p>
-                                Описание события в несколько строк, в котором раскрываются осовные её преимущества,
-                                особенности.
-                            </p>
-                            <a href="#" class="arrow">
-                                Купить билеты
-                                <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="event-block-bg">
-                            <img src="<%= 'images/no_img.jpg' %>" alt="event">
-                        </div>
-                    </div>
-                    <div class="event-block">
-                        <div class="event-block-tag">
-                            От 12 лет
-                        </div>
-                        <div class="event-block-status">
-                            Скоро будет
-                        </div>
-                        <div class="event-block-title">
-                            <div class="event-block-title-date">
-                                21 ноября, 14:00
+                            <div class="event-block-title">
+                                <div class="event-block-title-date">
+                                    21 ноября, 14:00
+                                </div>
+                                <h3>
+                                    Название программы
+                                </h3>
                             </div>
-                            <h3>
-                                Название программы
-                            </h3>
-                        </div>
-                        <div class="event-block-content">
-                            <div class="event-block-content-date">
-                                20 ноября, 14:00 60-90 минут
+                            <div class="event-block-content">
+                                <div class="event-block-content-date">
+                                    20 ноября, 14:00 60-90 минут
+                                </div>
+                                <h2>
+                                    Название события в несколько строк
+                                </h2>
+                                <p>
+                                    Описание события в несколько строк, в котором раскрываются осовные её преимущества,
+                                    особенности.
+                                </p>
+                                <a href="#" class="arrow">
+                                    Купить билеты
+                                    <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
                             </div>
-                            <h2>
-                                Название события в несколько строк
-                            </h2>
-                            <p>
-                                Описание события в несколько строк, в котором раскрываются осовные её преимущества,
-                                особенности.
-                            </p>
-                            <a href="#" class="arrow">
-                                Купить билеты
-                                <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
+                            <div class="event-block-bg">
+                                <img src="<%= 'images/no_img.jpg' %>" alt="event">
+                            </div>
                         </div>
-                        <div class="event-block-bg">
-                            <img src="<%= 'images/no_img.jpg' %>" alt="event">
+                        <div class="event-block">
+                            <div class="event-block-tag">
+                                От 12 лет
+                            </div>
+                            <div class="event-block-status">
+                                Скоро будет
+                            </div>
+                            <div class="event-block-title">
+                                <div class="event-block-title-date">
+                                    21 ноября, 14:00
+                                </div>
+                                <h3>
+                                    Название программы
+                                </h3>
+                            </div>
+                            <div class="event-block-content">
+                                <div class="event-block-content-date">
+                                    20 ноября, 14:00 60-90 минут
+                                </div>
+                                <h2>
+                                    Название события в несколько строк
+                                </h2>
+                                <p>
+                                    Описание события в несколько строк, в котором раскрываются осовные её преимущества,
+                                    особенности.
+                                </p>
+                                <a href="#" class="arrow">
+                                    Купить билеты
+                                    <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="event-block-bg">
+                                <img src="<%= 'images/no_img.jpg' %>" alt="event">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="meetings" class="grey border">
-            <div class="container">
-                <div class="events-grid">
-                    <div class="event-title-block yellow">
-                        <div class="event-block-tag">
-                            От 12 лет
-                        </div>
-                        <div class="event-title-block-content">
-                            <h2>
-                                Встречи с интересными людьми
-                            </h2>
-                            <p>
-                                Необходимо добавить описание блока «Встречи с интересными людьми», которое не будет
-                                превышать 100 символов
-                            </p>
-                            <a href="#" class="arrow">
-                                Смотреть всё
-                                <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
-                                        fill="#333333" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="event-title-block-bg">
-                            <div class="event-title-block-bg__top">
-                                <svg width="276" height="32" viewBox="0 0 276 32" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g opacity="0.1">
-                                        <path d="M276 16H16" stroke="#333333" stroke-width="5" />
-                                        <rect x="2.98023e-07" y="3.53835" width="17.1327" height="17.1327"
-                                            transform="matrix(0.706543 0.70767 -0.706543 0.70767 18.1387 1.03449)"
-                                            fill="white" stroke="#333333" stroke-width="5" />
-                                    </g>
-                                </svg>
+            <section id="meetings" class="grey border">
+                <div class="container">
+                    <div class="events-grid">
+                        <div class="event-title-block yellow">
+                            <div class="event-block-tag">
+                                От 12 лет
                             </div>
-                            <div class="event-title-block-bg__bottom">
-                                <svg width="353" height="112" viewBox="0 0 353 112" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g opacity="0.1">
-                                        <path d="M0.000366211 109L337.055 109L337.055 7.62939e-06" stroke="#333333"
-                                            stroke-width="5" />
-                                        <rect x="-3.53835" width="17.1327" height="17.1327"
-                                            transform="matrix(-0.70767 0.706543 -0.70767 -0.706543 346.958 44.652)"
-                                            fill="white" stroke="#333333" stroke-width="5" />
-                                    </g>
-                                </svg>
+                            <div class="event-title-block-content">
+                                <h2>
+                                    Встречи с интересными людьми
+                                </h2>
+                                <p>
+                                    Необходимо добавить описание блока «Встречи с интересными людьми», которое не будет
+                                    превышать 100 символов
+                                </p>
+                                <a href="#" class="arrow">
+                                    Смотреть всё
+                                    <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
+                                            fill="#333333" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="event-title-block-bg">
+                                <div class="event-title-block-bg__top">
+                                    <svg width="276" height="32" viewBox="0 0 276 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.1">
+                                            <path d="M276 16H16" stroke="#333333" stroke-width="5" />
+                                            <rect x="2.98023e-07" y="3.53835" width="17.1327" height="17.1327"
+                                                transform="matrix(0.706543 0.70767 -0.706543 0.70767 18.1387 1.03449)"
+                                                fill="white" stroke="#333333" stroke-width="5" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="event-title-block-bg__bottom">
+                                    <svg width="353" height="112" viewBox="0 0 353 112" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.1">
+                                            <path d="M0.000366211 109L337.055 109L337.055 7.62939e-06" stroke="#333333"
+                                                stroke-width="5" />
+                                            <rect x="-3.53835" width="17.1327" height="17.1327"
+                                                transform="matrix(-0.70767 0.706543 -0.70767 -0.706543 346.958 44.652)"
+                                                fill="white" stroke="#333333" stroke-width="5" />
+                                        </g>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="event-block">
-                        <div class="event-block-tag">
-                            От 12 лет
-                        </div>
-                        <div class="event-block-status">
-                            Скоро будет
-                        </div>
-                        <div class="event-block-title">
-                            <div class="event-block-title-date">
-                                21 ноября, 14:00
+                        <div class="event-block">
+                            <div class="event-block-tag">
+                                От 12 лет
                             </div>
-                            <h3>
-                                Название программы
-                            </h3>
-                        </div>
-                        <div class="event-block-content">
-                            <div class="event-block-content-date">
-                                20 ноября, 14:00 60-90 минут
+                            <div class="event-block-status">
+                                Скоро будет
                             </div>
-                            <h2>
-                                Название события в несколько строк
-                            </h2>
-                            <p>
-                                Описание события в несколько строк, в котором раскрываются осовные её преимущества,
-                                особенности.
-                            </p>
-                            <a href="#" class="arrow">
-                                Купить билеты
-                                <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="event-block-bg">
-                            <img src="<%= 'images/no_img.jpg' %>" alt="event">
-                        </div>
-                    </div>
-                    <div class="event-block">
-                        <div class="event-block-tag">
-                            От 12 лет
-                        </div>
-                        <div class="event-block-status">
-                            Скоро будет
-                        </div>
-                        <div class="event-block-title">
-                            <div class="event-block-title-date">
-                                21 ноября, 14:00
+                            <div class="event-block-title">
+                                <div class="event-block-title-date">
+                                    21 ноября, 14:00
+                                </div>
+                                <h3>
+                                    Название программы
+                                </h3>
                             </div>
-                            <h3>
-                                Название программы
-                            </h3>
-                        </div>
-                        <div class="event-block-content">
-                            <div class="event-block-content-date">
-                                20 ноября, 14:00 60-90 минут
+                            <div class="event-block-content">
+                                <div class="event-block-content-date">
+                                    20 ноября, 14:00 60-90 минут
+                                </div>
+                                <h2>
+                                    Название события в несколько строк
+                                </h2>
+                                <p>
+                                    Описание события в несколько строк, в котором раскрываются осовные её преимущества,
+                                    особенности.
+                                </p>
+                                <a href="#" class="arrow">
+                                    Купить билеты
+                                    <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
                             </div>
-                            <h2>
-                                Название события в несколько строк
-                            </h2>
-                            <p>
-                                Описание события в несколько строк, в котором раскрываются осовные её преимущества,
-                                особенности.
-                            </p>
-                            <a href="#" class="arrow">
-                                Купить билеты
-                                <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
+                            <div class="event-block-bg">
+                                <img src="<%= 'images/no_img.jpg' %>" alt="event">
+                            </div>
                         </div>
-                        <div class="event-block-bg">
-                            <img src="<%= 'images/no_img.jpg' %>" alt="event">
+                        <div class="event-block">
+                            <div class="event-block-tag">
+                                От 12 лет
+                            </div>
+                            <div class="event-block-status">
+                                Скоро будет
+                            </div>
+                            <div class="event-block-title">
+                                <div class="event-block-title-date">
+                                    21 ноября, 14:00
+                                </div>
+                                <h3>
+                                    Название программы
+                                </h3>
+                            </div>
+                            <div class="event-block-content">
+                                <div class="event-block-content-date">
+                                    20 ноября, 14:00 60-90 минут
+                                </div>
+                                <h2>
+                                    Название события в несколько строк
+                                </h2>
+                                <p>
+                                    Описание события в несколько строк, в котором раскрываются осовные её преимущества,
+                                    особенности.
+                                </p>
+                                <a href="#" class="arrow">
+                                    Купить билеты
+                                    <svg width="23" height="9" viewBox="0 0 23 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.3536 4.85355C22.5488 4.65829 22.5488 4.34171 22.3536 4.14645L19.1716 0.964466C18.9763 0.769204 18.6597 0.769204 18.4645 0.964466C18.2692 1.15973 18.2692 1.47631 18.4645 1.67157L21.2929 4.5L18.4645 7.32843C18.2692 7.52369 18.2692 7.84027 18.4645 8.03553C18.6597 8.2308 18.9763 8.2308 19.1716 8.03553L22.3536 4.85355ZM0 5H22V4H0V5Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="event-block-bg">
+                                <img src="<%= 'images/no_img.jpg' %>" alt="event">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <% include ./_common/footer/footer.html %>
+            <% include ./_common/footer/footer.html %>

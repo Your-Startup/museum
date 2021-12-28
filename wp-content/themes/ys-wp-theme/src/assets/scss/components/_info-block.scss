@@ -1,0 +1,34 @@
+.info-block-text {
+   max-width: 640px;
+   width: 50%;
+   margin-right: 40px;
+}
+
+.info-block-img {
+    width: 50%;
+    
+    & img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+}
+
+.info-block-link-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 41px;
+
+    & .btn {
+        position: absolute;
+        margin-bottom: 0;
+    }
+
+    & .download {
+        position: absolute;
+        left: 0;
+        bottom: -41px;
+    }
+}
