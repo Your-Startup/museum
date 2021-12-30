@@ -11,7 +11,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     devServer: {
         allowedHosts: "all",
         magicHtml: true,
-        open: '/dist/accessible.html',
+        open: '/dist/visitors.html',
         static: {
             directory: path.join(PATHS.template),
             publicPath: '/dist',

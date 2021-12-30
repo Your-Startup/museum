@@ -1,24 +1,60 @@
 @font-face {
-    font-family: 'PT Sans';
-    src: local('PT Sans'), local('PTSans-Regular'), url('ptsans.woff2') format('woff2'), url('ptsans.woff') format('woff'), url('ptsans.ttf') format('truetype');
-    font-weight: 400;
+    font-family: 'CoFo Sans';
+    src: url('CoFoSans-Bold.eot');
+    src: local('CoFo Sans Bold'), local('CoFoSans-Bold'),
+        url('CoFoSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CoFoSans-Bold.woff2') format('woff2'),
+        url('CoFoSans-Bold.woff') format('woff'),
+        url('CoFoSans-Bold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'PT Sans';
-    src: local('PT Sans Italic'), local('PTSans-Italic'), url('ptsansitalic.woff2') format('woff2'), url('ptsansitalic.woff') format('woff'), url('ptsansitalic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'PT Sans';
-    src: local('PT Sans Bold'), local('PTSans-Bold'), url('ptsansbold.woff2') format('woff2'), url('ptsansbold.woff') format('woff'), url('ptsansbold.ttf') format('truetype');
-    font-weight: 700;
+    font-family: 'CoFo Sans';
+    src: url('CoFoSans-Black.eot');
+    src: local('CoFo Sans Black'), local('CoFoSans-Black'),
+        url('CoFoSans-Black.eot?#iefix') format('embedded-opentype'),
+        url('CoFoSans-Black.woff2') format('woff2'),
+        url('CoFoSans-Black.woff') format('woff'),
+        url('CoFoSans-Black.ttf') format('truetype');
+    font-weight: 900;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'PT Sans';
-    src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url('ptsansbolditalic.woff2') format('woff2'), url('ptsansbolditalic.woff') format('woff'), url('ptsansbolditalic.ttf') format('truetype');
-    font-weight: 700;
+    font-family: 'CoFo Sans';
+    src: url('CoFoSans-Regular.eot');
+    src: local('CoFo Sans'), local('CoFoSans-Regular'),
+        url('CoFoSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('CoFoSans-Regular.woff2') format('woff2'),
+        url('CoFoSans-Regular.woff') format('woff'),
+        url('CoFoSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CoFo Sans';
+    src: url('CoFoSans-Medium.eot');
+    src: local('CoFo Sans Medium'), local('CoFoSans-Medium'),
+        url('CoFoSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('CoFoSans-Medium.woff2') format('woff2'),
+        url('CoFoSans-Medium.woff') format('woff'),
+        url('CoFoSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CoFo Robert';
+    src: url('CoFoRobert-RegularItalic.eot');
+    src: local('CoFo Robert Italic'), local('CoFoRobert-RegularItalic'),
+        url('CoFoRobert-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('CoFoRobert-RegularItalic.woff2') format('woff2'),
+        url('CoFoRobert-RegularItalic.woff') format('woff'),
+        url('CoFoRobert-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
     font-style: italic;
 }
+

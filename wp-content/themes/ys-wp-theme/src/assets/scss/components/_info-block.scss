@@ -6,11 +6,27 @@
 
 .info-block-img {
     width: 50%;
+    position: relative;
     
     & img {
         width: 100%;
         height: auto;
         border-radius: 8px;
+    }
+
+    & .info-block-border-top {
+        width: auto;
+        position: absolute;
+        top: -30px;
+        left: -40px;
+    }
+
+    & .info-block-border-bottom {
+        width: auto;
+        position: absolute;
+        bottom: -30px;
+        right: -40px;
+        transform: rotateZ(180deg);
     }
 }
 

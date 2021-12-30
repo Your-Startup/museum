@@ -1,0 +1,59 @@
+.tabs-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+
+.tabs-title {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+
+    &.active {
+        background-color: #333333;
+        color: #FFFFFF;
+    }
+}
+
+.tabs-tip {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(51, 51, 51, 0.7);
+    margin-bottom: -15px;
+}
+
+.tabs-body {
+    margin-top: 35px;
+    min-height: 330px;
+    position: relative;
+}
+
+.tab-content {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.4s;
+
+    &.active {
+        position: relative;
+        opacity: 1;
+        z-index: 5;
+    }
+}

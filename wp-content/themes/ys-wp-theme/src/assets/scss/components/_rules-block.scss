@@ -1,0 +1,24 @@
+.rules-block {
+    background: #333333;
+    border-radius: 8px;
+    padding: 45px 60% 45px 40px;
+
+    h2 {
+        color: #FFFFFF;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    a.download {
+        color: #FFFFFF;
+        margin-bottom: 10px;
+    }
+}
+ 
+.rules-block-files {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
