@@ -57,6 +57,11 @@ button {
         &:hover {
             background-color: rgba($color: #D6B762, $alpha: 0.7);
         }
+
+        &.contacts-form-btn {
+            height: 50px;
+            width: 100%;
+        }
     }
 }
 
