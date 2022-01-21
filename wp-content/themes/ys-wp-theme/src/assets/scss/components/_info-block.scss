@@ -7,7 +7,37 @@
 .info-block-img {
     width: 50%;
     position: relative;
-    
+
+    &.gradient::after {
+        content: '';
+        background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 80px;
+        z-index: 10;
+    }
+
+    &.gradient.grey::after {
+        content: '';
+        background: linear-gradient(270deg, #f9f9f9 0%, rgba(255, 255, 255, 0) 100%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 80px;
+        z-index: 10;
+    }
+
+    & .scroll-slider {
+        & img {
+            width: 500px;
+            height: 540px;
+            object-fit: cover;
+        }
+    }
+
     & img {
         width: 100%;
         height: auto;
@@ -28,6 +58,13 @@
         right: -40px;
         transform: rotateZ(180deg);
     }
+}
+
+.info-block-border-top {
+    width: auto;
+    position: absolute;
+    top: -30px;
+    left: -14px;
 }
 
 .info-block-link-img {

@@ -109,5 +109,21 @@ a.btn {
             background: #707070;
         }
     }
+
+    &.yellow {
+        background: #D6B762;
+        border-radius: 3px;
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 15px 20px;
+        color: #333333;
+
+        &:hover {
+            background-color: rgba($color: #D6B762, $alpha: 0.7);
+        }
+    }
 }
 

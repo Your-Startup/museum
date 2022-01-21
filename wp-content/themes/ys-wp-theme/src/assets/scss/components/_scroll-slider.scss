@@ -30,12 +30,23 @@
 
 .scroll-slider-item {
     user-select: none;
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
     &.w-3 {
         width: calc(33% - 20px);
-        margin-right: 20px;
+    }
 
-        &:last-child {
-            margin-right: 0;
+    &.w-4 {
+        width: calc(25% - 20px);
+
+        & img {
+            width: 330px;
+            height: 375px;
+            object-fit: cover;
         }
     }
 }
