@@ -1,7 +1,5 @@
 import "../assets/scss/pages/base.scss";
 
-import "@exjs";
-
 import {authForm, registrationForm, resetPasswordForm} from "../assets/js/common/forms";
 import {popupJs} from "../assets/js/components/ui-kit/popup";
 import {openMobileMenu} from "../assets/js/common/menu";
