@@ -1,0 +1,44 @@
+@import
+'~swiper/swiper.scss';
+
+.route-slider {
+    position: relative;
+    overflow: hidden;
+
+    & img {
+        pointer-events: none;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    & .route-slider-nav {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        z-index: 15;
+        display: flex;
+        align-items: center;
+
+        & .route-slider-prev,
+        & .route-slider-next {
+            cursor: pointer;
+        }
+
+        & .route-slider-fraction {
+            display: flex;
+            font-family: 'CoFo Sans';
+            font-style: normal;
+            font-weight: normal;
+            color: #FFFFFF;
+            font-size: 18px;
+            line-height: 26px;
+            margin: 0 20px;
+
+            & .route-slider-focus {
+                font-size: 24px;
+                line-height: 26px;
+            }
+        }
+    }
+}

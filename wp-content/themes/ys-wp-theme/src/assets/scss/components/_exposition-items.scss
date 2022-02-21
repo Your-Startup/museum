@@ -1,0 +1,202 @@
+.media-library-block {
+    position: relative;
+    height: 100%;
+
+    & img {
+        &.img-left {
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        &.img-right {
+            right: 0;
+            position: absolute;
+            top: 0;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            pointer-events: none;
+            z-index: 2;
+        }
+    }
+
+    .media-library-text {
+        position: relative;
+        z-index: 3;
+        padding: 20px;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+
+        & h3 {
+            font-family: 'CoFo Sans';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 26px;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+
+        & p {
+            font-family: Verdana;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+            margin-bottom: 20px;
+        } 
+        
+        & a {
+            font-family: Verdana;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px; 
+            color: #333333;
+        } 
+
+        & .media-library-links {
+            & a {
+                color: #707070;
+                margin-right: 25px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.media-library-video {
+    background-color: #D6B762;
+}
+
+.media-library-guides {
+    background-color: #8CAEB9;
+
+    & .media-library-text {
+        z-index: 1;
+
+        & h3 {
+            color: #FFFFFF;
+        }
+    }
+}
+
+.guide-player {
+    background: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    padding: 15px;
+    width: max-content;
+
+    & .guide-name {
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #333333;
+        margin-bottom: 10px;
+    }
+
+    & .guide-controls {
+        display: flex;
+        align-items: center;
+
+        & .play {
+            margin-right: 10px;
+        }
+
+        & .track-bar {
+            margin-right: 15px;
+            background-color: rgba(51, 51, 51, 0.5);
+            width: 220px;
+            height: 2px;
+            border-radius: 1px;
+        }
+
+        & .track-time {
+            color: rgba(51, 51, 51, 0.5);
+            font-family: 'PT Sans';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+}
+
+.exposition-group {
+    &:nth-child(odd) {
+        & .exposition-item:first-child {
+            height: 550px;
+            margin-bottom: 20px;
+        }
+    
+        & .exposition-item:last-child {
+            height: 450px;
+        }
+    }
+
+    &:nth-child(even) {
+        & .exposition-item:first-child {
+            height: 450px;
+            margin-bottom: 20px;
+        }
+    
+        & .exposition-item:last-child {
+            height: 550px;
+        }
+    } 
+}
+
+.exposition-item {
+    width: 360px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+
+    & h3 {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        z-index: 2;
+        padding: 10px 20px;
+        background-color: #fff;
+        max-width: 90%;
+        width: max-content;
+        font-family: 'CoFo Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 26px;
+        color: #333333;
+    }
+}
+
+.exposition-item-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    & img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

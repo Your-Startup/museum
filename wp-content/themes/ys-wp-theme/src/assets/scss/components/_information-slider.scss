@@ -1,0 +1,65 @@
+@import
+'~swiper/swiper.scss';
+
+.information__slider-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -60px;
+}
+
+.information__slider-btn {
+    background-color: #333;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #EBEBEB;
+    border-radius: 8px;
+    transition: background-color .3s ease-in-out;
+}
+
+.information__slider-btn:hover {
+    background-color: #4c4c4c;
+}
+
+.information__slider {
+    width: 1200px;
+    height: 505px;
+    overflow: hidden;
+}
+
+.information__slide {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid rgba(51, 51, 51, 0.1);
+    border-radius: 8px;
+    position: relative;
+}
+
+.information__slide-img {
+    width: auto;
+    height: 502px;
+    pointer-events: none;
+}
+
+.information__stage {
+    font-family: 'CoFo Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.information__slider .swiper-slide-prev,
+.information__slider .swiper-slide-next {
+    transform: none;
+}

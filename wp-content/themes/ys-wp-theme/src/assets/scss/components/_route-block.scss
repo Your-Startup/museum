@@ -1,0 +1,41 @@
+.route-block {
+    display: flex;
+    background: #333333;
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 440px;
+   
+
+    & .text-content {
+        position: relative;
+        height: 100%;
+        width: 50%;
+        padding: 70px 60px 50px 20px;
+    }
+
+    & .tag {
+       position: absolute;
+       left: 0;
+       top: 20px;
+       background-color: #D6B762;
+       border-radius: 0px 3px 3px 0px;
+       padding: 5px 10px;
+       font-family: 'PT Sans';
+       font-style: normal;
+       font-weight: normal;
+       font-size: 14px;
+       line-height: 18px;
+       color: #333333;
+    }
+
+    & .border {
+        position: absolute;
+        right: 25px;
+        bottom: 25px;
+    }
+}
+
+.route-slider-container {
+    width: 50%;
+    position: relative;
+}

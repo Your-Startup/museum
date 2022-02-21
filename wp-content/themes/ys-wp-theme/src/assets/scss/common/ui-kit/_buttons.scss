@@ -1,86 +1,129 @@
 @charset "utf-8";
 
-.button {
-    height: 75px;
-    width: 100%;
-
-    background: linear-gradient(92.92deg, #7AEB8C 0%, #21A636 0.01%, #066716 100%);
-    box-shadow: 0 0 0 #167224, 0 24px 24px -12px rgba(33, 166, 54, 0.25), inset 0px 4px 16px rgba(255, 255, 255, 0.25);
-    border-radius: 100px;
-    color: #fff;
-    transition: 0.5s;
+button {
+    border: none;
+    height: 40px;
+    border-radius: 3px;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 0.065em;
-    border: 0;
-    cursor: pointer;
+    transition: 0.4s;
 
-    &:hover {
-        box-shadow: 0 6px 0 #167224, 0 24px 24px -12px rgba(33, 166, 54, 0.25), inset 0px 4px 16px rgba(255, 255, 255, 0.25);
-        transform: translateY(-6px);
+    &.black {
+        
+        padding: 0 18px;
+        color: #fff;
+        background-color: #000;
+        font-size: 16px;
+        line-height: 21px;
+        font-family: 'PT Sans';
+        font-style: normal;
+        font-weight: normal;
+        margin-left: 20px;
     }
 
-    &:active {
-        background: linear-gradient(92.92deg, #03FF2D 0%, #21A636 0.01%, #0D9122 100%);
-        box-shadow: 0 0 0 #167224, 0 24px 24px -12px rgba(33, 166, 54, 0.25), inset 0px 4px 16px rgba(255, 255, 255, 0.25);
-        transform: translateY(0);
+    &.black img {
+        margin-right: 6px;
     }
 
-    .text-overflow {
-        display: block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        pointer-events: none;
+    &.white {
+        background-color: #fff;  
+        padding: 15px 20px;
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+
+        &:hover {
+            color: #333333;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
     }
 
-    &.allow-selection {
-        user-select: text;
-    }
+    &.yellow {
+        background: #D6B762;
+        border-radius: 3px;
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 15px 20px;
+        color: #333333;
 
-    &.size-tn {
-        height: 28px;
-        font-size: $font-xs;
-    }
+        &:hover {
+            background-color: rgba($color: #D6B762, $alpha: 0.7);
+        }
 
-    &.size-sm {
-        height: 36px;
-    }
-
-    &.size-md {
-        height: 44px;
-    }
-
-    &.size-lg {
-        font-size: $font-lg;
-        height: 60px;
-    }
-
-    &.width-ex-lg {
-        max-width: 360px;
-    }
-
-    &.width-lg {
-        max-width: 390px;
-    }
-
-    &.width-md {
-        max-width: 300px;
-    }
-
-    &.width-sm {
-        max-width: 260px;
-    }
-
-    &.radius-4 {
-        border-radius: $radius-4;
-    }
-
-    &:disabled {
-        background-color: $medium-grey-one !important;
+        &.contacts-form-btn {
+            height: 50px;
+            width: 100%;
+        }
     }
 }
+
+a.btn {
+
+    display: block;
+    width: max-content;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    padding: 15px 20px;
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    transition: 0.4s;
+
+    &.white {
+        background-color: #FFFFFF;  
+        color: #000000;
+
+        &:hover {
+            color: #333333;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    &.t-white {
+        font-family: 'PT Sans';
+        line-height: 21px;
+        background-color: transparent;  
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 3px;
+        padding: 5px 10px;
+    }
+
+
+    &.grey {
+        background-color: #333333;
+        color: #FFFFFF;
+
+        &:hover {
+            background: #707070;
+        }
+    }
+
+    &.yellow {
+        background: #D6B762;
+        border-radius: 3px;
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 15px 20px;
+        color: #333333;
+
+        &:hover {
+            background-color: rgba($color: #D6B762, $alpha: 0.7);
+        }
+    }
+}
+

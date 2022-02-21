@@ -1,23 +1,14 @@
-export function tabs() {
-    document.addEventListener('click', function (e) {
-        let element = e.target;
-        if (!element.classList.contains('js-tab')) {
-            return;
-        }
+$(document).ready(function () {
 
-        let tabs = element.closest('.js-tabs');
-        if (!tabs) {
-            return;
-        }
+    $('.tabs-title').click(function () {
+        const parent = $(this).parents('.tabs');
+        const index = $(this).index();
 
-        let tabsLink = tabs.querySelectorAll('.js-tab'),
-            tabsBody = tabs.querySelectorAll('.js-tab-body'),
-            i        = tabsLink.indexOf(element);
+        $(parent).find('.tabs-title').removeClass('active');
+        $(this).addClass('active');
 
-        tabsLink.classList.remove('active');
-        tabsBody.classList.remove('active');
-
-        tabsLink[i].classList.add('active');
-        tabsBody[i].classList.add('active');
+        $(parent).find('.tab-content').removeClass('active');
+        $(parent).find('.tab-content').eq(index).addClass('active');
     });
-}
+
+});

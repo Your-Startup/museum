@@ -1,10 +1,10 @@
-const path                 = require('path'),
-      MiniCssExtractPlugin = require('mini-css-extract-plugin'),
-      CopyWebpackPlugin    = require('copy-webpack-plugin'),
-      {CleanWebpackPlugin} = require('clean-webpack-plugin'),
-      {PATHS, getEntries}  = require('./helper'),
-      webpack              = require('webpack'),
-      HtmlWebpackPlugin    = require("html-webpack-plugin");
+const path = require('path'),
+    MiniCssExtractPlugin = require('mini-css-extract-plugin'),
+    CopyWebpackPlugin = require('copy-webpack-plugin'),
+    { CleanWebpackPlugin } = require('clean-webpack-plugin'),
+    { PATHS, getEntries } = require('./helper'),
+    webpack = require('webpack'),
+    HtmlWebpackPlugin = require("html-webpack-plugin");
 const glob = require("glob");
 
 let plugins = [
@@ -18,14 +18,17 @@ let plugins = [
     }),
 
     new CopyWebpackPlugin([
-        {from: `${PATHS.src}/assets/images`, to: `${PATHS.dist}/images`},
-        {from: `${PATHS.src}/assets/fonts`, to: `${PATHS.dist}/fonts`},
+        { from: `${PATHS.src}/assets/images`, to: `${PATHS.dist}/images` },
+        { from: `${PATHS.src}/assets/fonts/cofo`, to: `${PATHS.dist}/fonts` },
+        { from: `${PATHS.src}/assets/fonts/ptsans`, to: `${PATHS.dist}/fonts` },
+        { from: `${PATHS.src}/assets/fonts/verdana`, to: `${PATHS.dist}/fonts` },
+        { from: `${PATHS.src}/assets/video`, to: `${PATHS.dist}/video` },
     ]),
 
     new webpack.ProvidePlugin({
-        "$"            : "jquery",
-        "jQuery"       : "jquery",
-        "window.$"     : "jquery",
+        "$": "jquery",
+        "jQuery": "jquery",
+        "window.$": "jquery",
         "window.jQuery": "jquery"
     }),
 ];
@@ -39,8 +42,8 @@ glob.sync(`${PATHS.template}/**/*.html`).forEach(item => {
         new HtmlWebpackPlugin({
             filename: `${path.basename(item, path.extname(item))}.html`,
             template: '!!ejs-compiled-loader!' + item,
-            inject  : true,
-            chunks  : ['base', file],
+            inject: true,
+            chunks: ['base', file],
         })
     );
 })
@@ -57,73 +60,73 @@ module.exports = {
         hints: false
     },
     // Убирает логирование плагинов в терминал (чтобы проще читалось)
-    stats    : {children: false},
-    resolve  : {
+    stats: { children: false },
+    resolve: {
         alias: {
-            '@theme'          : PATHS.theme,
-            '@assets'         : PATHS.assets,
-            '@base-assets'    : PATHS.baseAssets,
-            '@theme-assets'   : PATHS.themeAssets,
+            '@theme': PATHS.theme,
+            '@assets': PATHS.assets,
+            '@base-assets': PATHS.baseAssets,
+            '@theme-assets': PATHS.themeAssets,
             '@homepage-assets': PATHS.homepageAssets,
-            '@plugins'        : PATHS.plugins,
-            '@exjs'           : path.join(PATHS.assets, '/libs/extendedjs'),
+            '@plugins': PATHS.plugins,
+            '@exjs': path.join(PATHS.assets, '/libs/extendedjs'),
         }
     },
-    entry    : getEntries(),
-    output   : {
-        filename  : 'js/[name].min.js',
-        path      : PATHS.dist,
+    entry: getEntries(),
+    output: {
+        filename: 'js/[name].min.js',
+        path: PATHS.dist,
         publicPath: ''
     },
-    module   : {
+    module: {
         //noParse: /jquery/,
         rules: [{
-            test   : /\.js$/,
-            loader : 'babel-loader',
+            test: /\.js$/,
+            loader: 'babel-loader',
             exclude: /node_modules/,
             options: {
                 presets: ['@babel/preset-env'],
                 plugins: ['@babel/plugin-proposal-class-properties', "transform-regenerator"]
             }
         }, {
-            test   : /\.(png|jpg|gif|svg)$/,
-            loader : 'file-loader',
+            test: /\.(png|jpg|gif|svg)$/,
+            loader: 'file-loader',
             options: {
-                name      : '[name].[ext]',
+                name: '[name].[ext]',
                 outputPath: 'images'
             }
         }, {
-            test   : /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-            loader : 'file-loader',
+            test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+            loader: 'file-loader',
             options: {
-                name      : '[name].[ext]',
-                outputPath: 'fonts'
+                name: '[name].[ext]',
+                outputPath: '../fonts'
             }
         }, {
             test: /\.s[ca]ss$/,
-            use : [
+            use: [
                 MiniCssExtractPlugin.loader,
                 {
-                    loader : 'css-loader',
-                    options: {importLoaders: 2} // 2 - sass-loader, postcss-loader
+                    loader: 'css-loader',
+                    options: { importLoaders: 2 } // 2 - sass-loader, postcss-loader
                 },
                 {
-                    loader : 'postcss-loader',
-                    options: {config: {path: `${PATHS.configs}/postcss/postcss.config.js`}}
+                    loader: 'postcss-loader',
+                    options: { config: { path: `${PATHS.configs}/postcss/postcss.config.js` } }
                 },
                 'sass-loader'
             ]
         }, {
             test: /\.css$/,
-            use : [
+            use: [
                 MiniCssExtractPlugin.loader,
                 {
-                    loader : 'css-loader',
-                    options: {importLoaders: 1} // 1 - sass-loader
+                    loader: 'css-loader',
+                    options: { importLoaders: 1 } // 1 - sass-loader
                 },
                 {
-                    loader : 'postcss-loader',
-                    options: {config: {path: `${PATHS.configs}/postcss/postcss.config.js`}}
+                    loader: 'postcss-loader',
+                    options: { config: { path: `${PATHS.configs}/postcss/postcss.config.js` } }
                 },
             ],
         }]
@@ -132,5 +135,5 @@ module.exports = {
         //     $: 'jquery',
         //     jquery: 'jQuery',
     },
-    plugins  : plugins,
+    plugins: plugins,
 };
